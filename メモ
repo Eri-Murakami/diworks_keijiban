@@ -1,0 +1,52 @@
+【入力ぺ-ジを保持する】
+<?php if(!empty($_POST['文字列'])){
+echo $_POST['文字列'];}?>
+}
+
+<input type="text"value="<?php echo $text_value; ?>">
+ 
+ <input type="text"class="text"size="35"name="name">
+ 
+ <input type="submit"class="button1"value="戻って修正する">
+                <input type = "hidden" value = "<?php if(!empty($_POST['name'])) {echo $_POST['name'];}?>" name = "name">
+                <input type = "hidden" value = "<?php if(!empty($_POST['mail'])) {echo $_POST['mail'];}?>" name = "mail">
+                <input type = "hidden" value = "<?php if(!empty($_POST['age'])) {echo $_POST['age'];}?>" name = "age">
+                <input type = "hidden" value = "<?php if(!empty($_POST['comments'])) {echo
+                $_POST['comments'];}?>" name = "comments">
+
+session_start();
+
+if(!insset($_POST_['name'])){
+$_POST_['name'] = input type = "hidden" value = "<?php if(!empty($_POST['name'])) {echo $_POST['name'];}?>" name = "name">;
+}else{
+$_POST_['name']= input type="text"class="text"size="35"name="name";
+}
+
+
+
+【データが空か調べる】
+
+//POSTデータを受け取る
+ $str = filter_input(INPUT_POST,'str');
+  
+  //空かどうか確認する 
+if(!empty($変数名)){
+//空ではなかった時の処理
+                }
+                
+                
+                
+ 
+ 【データが空の場合エラーメッセージ】
+   //htmlに入れる     
+  required 
+  
+  <?php
+mb_internal_encoding("utf8");
+$pdo = new PDO("mysql:dbname=lesson01;host=localhost;","root","");
+$pdo->exec("insert into diworks_keijiban(handlename,title,comments)values
+('".$_POST['handlename']."','".$_POST['title']."','".$_POST['comments']."');");
+header("Location:http://localhost/diworks_keijiban/02_PHP%2017%E6%99%82%E9%96%93%E7%9B%AE(%E6%BC%94%E7%BF
+%922%20%E6%8E%B2%E7%A4%BA%E6%9D%BF%E3%81%AE%E4%BD%9C%E6%88%90%EF%BC%89%E4%BF%AE%20index
+%20.php");
+?>
